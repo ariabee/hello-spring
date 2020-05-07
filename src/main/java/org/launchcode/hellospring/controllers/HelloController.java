@@ -47,14 +47,14 @@ public class HelloController {
     @GetMapping("form")
     public String helloForm() {
         String html =
-                "<html>" +
+                //"<html>" +
                         "<body>" +
                         "<form action='hellocoder' method='post'>" + // submit a request to /hello
                         "<input type='test' name='coder' />" + // 'coder' is the query variable
                         "<input type='submit'  value='Greet me!' />" + // clicking this will submit the form input values
                         "</form>" +
-                        "</body>" +
-                        "</html>";
+                        "</body>";
+                       // "</html>";
         return html;
     }
 
